@@ -3,7 +3,7 @@
     "description": "Stephen Fluin's Firebase tools!",
     "version": "0.1.2",
     "license": "MIT",
-    "private": true,
+    "private": false,
 
     "peerDependencies": {
         "angularfire2": "^5.0.0-rc.4",
@@ -13,6 +13,7 @@
     "ngPackage": {
         "lib": {
             "entryFile": "./sffb/index.ts"
-        }
+        },
+        "dest": "../../dist"
     }
 }

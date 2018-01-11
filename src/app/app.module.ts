@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SFFBModule } from './sffb/sffb.module';
+import { SFFBModule } from '../lib/sffb/sffb.module';
 
 import { AppComponent } from './app.component';
 import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
