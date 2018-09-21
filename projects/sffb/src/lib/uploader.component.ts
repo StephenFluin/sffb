@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as firebase from 'firebase';
 
@@ -21,8 +21,10 @@ export class UploaderComponent implements OnChanges {
      * The name of the folder for images
      * eg. posts/angular-is-awesome
      */
-    @Input() folder: string;
-    @Input() maxAge = 604800;
+    @Input()
+    folder: string;
+    @Input()
+    maxAge = 604800;
 
     fileList: AngularFireList<Image>;
     imageList: Observable<Image[]>;
