@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SFFBModule } from '../lib/sffb/sffb.module';
 
 import { AppComponent } from './app.component';
-import { AngularFireDatabase, AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireModule } from 'angularfire2';
+import { SFFBModule } from 'projects/sffb/src/public_api';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 @NgModule({
     declarations: [AppComponent],
@@ -17,8 +17,8 @@ import { AngularFireModule } from 'angularfire2';
             databaseURL: 'https://fluindotio-website-93127.firebaseio.com',
             projectId: 'fluindotio-website-93127',
             storageBucket: 'fluindotio-website-93127.appspot.com',
-            messagingSenderId: '1051668521425'
-          }),
+            messagingSenderId: '1051668521425',
+        }),
         AngularFireDatabaseModule,
     ],
     providers: [],
